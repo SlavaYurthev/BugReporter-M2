@@ -1,0 +1,23 @@
+.bug-reporter-button-icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 200px;
+	right: 10px;
+	opacity: 0.7;
+	-webkit-transition: opacity .1s ease-in-out;
+	-moz-transition: opacity .1s ease-in-out;
+	-ms-transition: opacity .1s ease-in-out;
+	-o-transition: opacity .1s ease-in-out;
+	transition: opacity .1s ease-in-out;
+	background-size: 100%;
+	background-image: url(../img/bug-report-icon_75.png);
+	background-repeat: no-repeat;
+}
+.bug-reporter-button-icon:hover {
+	opacity: 0.9;
+}
+.bug-reporter-button-send {
+	float: right;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BugReporter
+ * 
+ * @author Slava Yurthev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="SY_BugReporter::header" title="Bug Reporter Extension" sortOrder="0">
+					<resource id="SY_BugReporter::reports" title="Reports" sortOrder="1"/>
+					<resource id="SY_BugReporter::configuration" title="Configuration" sortOrder="2" />
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

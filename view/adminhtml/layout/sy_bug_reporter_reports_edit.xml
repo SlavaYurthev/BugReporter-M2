@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BugReporter
+ * 
+ * @author Slava Yurthev
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="admin-2columns-left">
+    <body>
+    	<referenceContainer name="left">
+            <block class="SY\BugReporter\Block\Adminhtml\Reports\Edit\Tabs"
+                name="bug_report_edit_tabs"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="SY\BugReporter\Block\Adminhtml\Reports\Edit" name="bug_report_edit"/>
+        </referenceContainer>
+    </body>
+</page>

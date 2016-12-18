@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BugReporter
+ * 
+ * @author Slava Yurthev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="SY_BugReporter::header" title="Bug Reporter" module="SY_BugReporter" sortOrder="0" resource="SY_BugReporter::header" parent="Magento_Backend::content_elements"/>
+		<add id="SY_BugReporter::reports" title="Reports" module="SY_BugReporter" sortOrder="1" parent="SY_BugReporter::header" action="sy_bug_reporter/reports" resource="SY_BugReporter::reports"/>
+		<add id="SY_BugReporter::configuration" title="Configuration" module="SY_BugReporter" sortOrder="2" parent="SY_BugReporter::header" action="adminhtml/system_config/edit/section/sy_bug_reporter_configuration" resource="SY_BugReporter::configuration"/>
+	</menu>
+</config>

@@ -1,0 +1,63 @@
+<!--
+/**
+ * BugReporter
+ * 
+ * @author Slava Yurthev
+ */
+-->
+<?php if($this->isActive()): ?>
+	<div style="display:none;">
+		<div id="bug-reporter-modal">
+			<form data-mage-init='{"validation": {}}' action="<?php echo $this->getUrl('sy_bug_reporter/post/save'); ?>" method="POST" id="bug-reporter-form">
+				<fieldset class="fieldset create info">
+					<legend class="legend"><span><?php echo __('Personal Information'); ?></span></legend><br>
+					<div class="field field-name-firstname required">
+						<label class="label" for="firstname">
+							<span><?php echo __('First Name'); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="firstname" name="firstname" value="<?php echo $this->getFirstname(); ?>" title="<?php echo __('First Name'); ?>" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+						</div>
+					</div>
+					<div class="field field-name-lastname required">
+						<label class="label" for="lastname">
+							<span><?php echo __('Last Name'); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="lastname" name="lastname" value="<?php echo $this->getLastname(); ?>" title="<?php echo __('Last Name'); ?>" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+						</div>
+					</div>
+					<div class="field field-name-email required">
+						<label class="label" for="email">
+							<span><?php echo __('Email'); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="email" name="email" value="<?php echo $this->getEmail(); ?>" title="<?php echo __('Email'); ?>" class="input-text required-entry" data-validate="{required:true,email:true}" autocomplete="off" aria-required="true">
+						</div>
+					</div>
+				</fieldset>
+				<div class=""></div>
+				<fieldset class="fieldset create info">
+					<legend class="legend"><span><?php echo __('Additional'); ?></span></legend><br>
+					<div class="field field-name-url required">
+						<label class="label" for="url">
+							<span><?php echo __('Url'); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="url" name="url" value="<?php echo $this->getCurrentUrl(); ?>" title="<?php echo __('Url'); ?>" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true" readonly="readonly">
+						</div>
+					</div>
+					<div class="field field-name-comment required">
+						<label class="label" for="comment">
+							<span><?php echo __('Comment'); ?></span>
+						</label>
+						<div class="control">
+							<textarea id="comment" name="comment" value="" title="<?php echo __('Comment'); ?>" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true" style="resize:none;"></textarea>
+						</div>
+					</div>
+				</fieldset>
+				<div class=""></div>
+			</form>
+		</div>
+	</div>
+<?php endif; ?>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BugReporter
+ * 
+ * @author Slava Yurthev
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="standard">
+		<route id="sy_bug_reporter" frontName="sy_bug_reporter">
+			<module name="SY_BugReporter" />
+		</route>
+	</router>
+</config>
