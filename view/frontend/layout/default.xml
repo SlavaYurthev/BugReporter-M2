@@ -6,14 +6,9 @@
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
-	<head>
-		<css src="SY_BugReporter::css/bug-reporter.css" />
-		<link src="SY_BugReporter::js/bug-reporter.js" />
-	</head>
 	<body>
 		<referenceContainer name="before.body.end">
-			<block class="SY\BugReporter\Block\Button" name="bug_reporter_button" as="bug.reporter.button" template="reporter/button.phtml" />
-			<block class="SY\BugReporter\Block\Modal" name="bug_reporter_modal" as="bug.reporter.modal" template="reporter/modal.phtml" />
+			<block class="SY\BugReporter\Block\BugReporter" name="bug_reporter" template="SY_BugReporter::bug_reporter.phtml" />
 		</referenceContainer>
 	</body>
 </page>

@@ -9,7 +9,7 @@ use \Magento\Framework\View\Element\Template;
 use \Magento\Framework\View\Element\Template\Context;
 use \Magento\Customer\Model\Session;
 use \Magento\Customer\Model\Customer;
-class Modal extends Template {
+class BugReporter extends Template {
 	protected $registry;
 	protected $product;
 	public function __construct(

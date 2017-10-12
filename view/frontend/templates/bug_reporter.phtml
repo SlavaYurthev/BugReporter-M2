@@ -6,8 +6,11 @@
  */
 -->
 <?php if($this->isActive()): ?>
+	<div class="bug-reporter-button">
+		<a href="javascript:void(0);" class="bug-reporter-button-icon bug-reporter-button-icon-pulse" alt="<?php echo __('Bug Report'); ?>" title="<?php echo __('Bug Report'); ?>" class="button" data-mage-init='{"SY_BugReporter/js/bug-reporter-button": {}}'></a>
+	</div>
 	<div style="display:none;">
-		<div id="bug-reporter-modal">
+		<div id="bug-reporter-modal" data-mage-init='{"SY_BugReporter/js/bug-reporter-modal": {}}'>
 			<form data-mage-init='{"validation": {}}' action="<?php echo $this->getUrl('sy_bug_reporter/post/save'); ?>" method="POST" id="bug-reporter-form">
 				<fieldset class="fieldset create info">
 					<legend class="legend"><span><?php echo __('Personal Information'); ?></span></legend><br>
@@ -60,4 +63,5 @@
 			</form>
 		</div>
 	</div>
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->getViewFileUrl('SY_BugReporter::css/bug-reporter.css'); ?>">
 <?php endif; ?>

@@ -1,11 +1,11 @@
 {
     "name": "sy/bug_reporter",
-    "description": "Bug Reporter",
+    "description": "Bug Reporter Extension",
     "license": [
         "OSL-3.0"
     ],
     "type": "magento2-module",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Slava Yurthev",

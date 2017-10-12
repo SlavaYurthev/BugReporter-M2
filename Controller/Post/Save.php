@@ -24,7 +24,7 @@ class Save extends \Magento\Framework\App\Action\Action {
 		try {
 			$model->save();
 			$this->messageManager->addSuccess(__('Thank you for your report. We will check it.'));
-		} catch (Exception $e) {
+		} catch (\Exception $e) {
 			$this->messageManager->addException($e, __('Something went wrong.'));
 		}
 		return $resultRedirect->setPath($this->_redirect->getRefererUrl());
