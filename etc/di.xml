@@ -18,20 +18,20 @@
     </virtualType>
     <virtualType name="BugReporterGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
         <arguments>
-            <argument name="collection" xsi:type="object" shared="false">SY\BugReporter\Model\Resource\Report\Collection</argument>
+            <argument name="collection" xsi:type="object" shared="false">SY\BugReporter\Model\ResourceModel\Report\Collection</argument>
             <argument name="filterPool" xsi:type="object" shared="false">BugReporterGridFilterPool</argument>
         </arguments>
     </virtualType>
-    <virtualType name="SY\BugReporter\Model\Resource\Report\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+    <virtualType name="SY\BugReporter\Model\ResourceModel\Report\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
             <argument name="mainTable" xsi:type="string">sy_bug_reporter_entity</argument>
-            <argument name="resourceModel" xsi:type="string">SY\BugReporter\Model\Resource\Report</argument>
+            <argument name="resourceModel" xsi:type="string">SY\BugReporter\Model\ResourceModel\Report</argument>
         </arguments>
     </virtualType>
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="sy_bug_reports_listing_data_source" xsi:type="string">SY\BugReporter\Model\Resource\Report\Grid\Collection</item>
+                <item name="sy_bug_reports_listing_data_source" xsi:type="string">SY\BugReporter\Model\ResourceModel\Report\Grid\Collection</item>
             </argument>
         </arguments>
     </type>
